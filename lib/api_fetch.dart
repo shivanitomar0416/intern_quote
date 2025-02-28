@@ -13,7 +13,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
   String quote = "Press the button to fetch a quote";
   Future<void> fetchQuote() async {
     try {
-    final url = Uri.parse('https://api.quotable.io/random');
+    final url = Uri.parse('https://zenquotes.io/api/random'); //https://api.quotable.io/random {your api is not working so i use another one
     final response = await http.get(url);
 
     if (response.statusCode == 200) {
